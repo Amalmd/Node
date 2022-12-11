@@ -6,3 +6,73 @@ command: db.restaurants.insertOne({name: 'BBB})
 
 3. inside the collection create at least 5 restaurant
 command: db.restaurants.insertMany([{name: 'Japanika'}, {name: 'Burger Saloon'}, {name: 'El-Babour'}, {name: 'Chuka'}])
+
+findMyResturant> db.resturants.find()
+[
+  {
+    _id: ObjectId("639645254e76f325c4bfea84"),
+    name: 'BBB',
+    address: {
+      city: 'Haifa',
+      street: 'Alnbi',
+      coords: [ -78, 777, 40.887 ],
+      cuisine: 'Burger'
+    },
+    reviews: { date: '20.5.22', rate: '8.3' }
+  },
+  {
+    _id: ObjectId("639646784e76f325c4bfea85"),
+    name: 'Japanika',
+    address: {
+      city: 'Hadera',
+      street: 'Tidhar',
+      coords: [ -46, 777, 20.887 ],
+      cuisine: 'Asian Food'
+    },
+    reviews: { date: '23.8.22', rate: '9.2' }
+  },
+  {
+    _id: ObjectId("639646784e76f325c4bfea86"),
+    name: 'Burger Saloon',
+    address: {
+      city: 'Zichron Yaacov',
+      street: 'Zichron',
+      coords: [ -60, 777, 58.887 ],
+      cuisine: 'Burgers'
+    },
+    reviews: { date: '5.11.22', rate: '8.9' }
+  },
+  {
+    _id: ObjectId("639646784e76f325c4bfea87"),
+    name: 'El-Babour',
+    address: {
+      city: 'Um-Elfahem',
+      street: 'El-Karam',
+      coords: [ -93, 777, 54.887 ],
+      cuisine: 'BBQ'
+    },
+    reviews: { date: '16.1.22', rate: '7.5' }
+  },
+  {
+    _id: ObjectId("639646784e76f325c4bfea88"),
+    name: 'Chuka',
+    address: {
+      city: 'Gan Shmuel',
+      street: 'Gan Shmuel',
+      coords: [ -43, 777, 20.887 ],
+      cuisine: 'Asian Food'
+    },
+    reviews: { date: '3.10.22', rate: '8.6' }
+  },
+  {
+    _id: ObjectId("63964be24e76f325c4bfea8a"),
+    name: 'Landver',
+    address: {
+      city: 'Benyamina',
+      street: 'Herzel',
+      coords: [ -88, 777, 50.887 ],
+      cuisine: 'Breakfast'
+    },
+    reviews: { date: '18.9.22', rate: '7.2' }
+  }
+]
