@@ -1,0 +1,8 @@
+1. Create a database called findMyRestaurant
+command: use findMyRestaurant
+
+2. Create a collection called restaurants
+command: db.restaurants.insertOne({name: 'BBB})
+
+3. inside the collection create at least 5 restaurant
+command: db.restaurants.insertMany([{name: 'Japanika'}, {name: 'Burger Saloon'}, {name: 'El-Babour'}, {name: 'Chuka'}])
